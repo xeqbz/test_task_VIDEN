@@ -9,19 +9,16 @@ FACEBOOK_ADS_BIGQUERY_SCHEMA = [
     {"name": "date_stop", "type": "DATE", "mode": "NULLABLE"},
     {"name": "age", "type": "STRING", "mode": "NULLABLE"},
     {"name": "gender", "type": "STRING", "mode": "NULLABLE"},
-
     {"name": "impressions", "type": "INT64", "mode": "NULLABLE"},
     {"name": "clicks", "type": "INT64", "mode": "NULLABLE"},
     {"name": "reach", "type": "INT64", "mode": "NULLABLE"},
     {"name": "unique_clicks", "type": "INT64", "mode": "NULLABLE"},
-
     {"name": "frequency", "type": "FLOAT64", "mode": "NULLABLE"},
     {"name": "spend", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "cpm", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "cpc", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "ctr", "type": "FLOAT64", "mode": "NULLABLE"},
     {"name": "cpp", "type": "NUMERIC", "mode": "NULLABLE"},
-
     {"name": "link_clicks", "type": "INT64", "mode": "NULLABLE"},
     {"name": "landing_page_views", "type": "INT64", "mode": "NULLABLE"},
     {"name": "page_engagements", "type": "INT64", "mode": "NULLABLE"},
@@ -32,13 +29,11 @@ FACEBOOK_ADS_BIGQUERY_SCHEMA = [
     {"name": "initiate_checkout", "type": "INT64", "mode": "NULLABLE"},
     {"name": "add_payment_info", "type": "INT64", "mode": "NULLABLE"},
     {"name": "purchases", "type": "INT64", "mode": "NULLABLE"},
-
     {"name": "view_content_value", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "add_to_cart_value", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "initiate_checkout_value", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "add_payment_info_value", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "purchase_revenue", "type": "NUMERIC", "mode": "NULLABLE"},
-
     {"name": "cost_per_link_click", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "cost_per_landing_page_view", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "cost_per_page_engagement", "type": "NUMERIC", "mode": "NULLABLE"},
@@ -49,11 +44,8 @@ FACEBOOK_ADS_BIGQUERY_SCHEMA = [
     {"name": "cost_per_initiate_checkout", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "cost_per_add_payment_info", "type": "NUMERIC", "mode": "NULLABLE"},
     {"name": "cost_per_purchase", "type": "NUMERIC", "mode": "NULLABLE"},
-
     {"name": "website_ctr_link_click", "type": "FLOAT64", "mode": "NULLABLE"},
-
     {"name": "video_plays", "type": "INT64", "mode": "NULLABLE"},
     {"name": "video_avg_time_watched_seconds", "type": "FLOAT64", "mode": "NULLABLE"},
-
     {"name": "roas", "type": "FLOAT64", "mode": "NULLABLE"},
 ]

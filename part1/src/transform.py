@@ -4,7 +4,6 @@ import logging
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -83,7 +82,9 @@ def array_to_metric_map(
     return result
 
 
-def get_default_value(default_from_config: Any, value_type: str) -> int | Decimal | None:
+def get_default_value(
+    default_from_config: Any, value_type: str
+) -> int | Decimal | None:
     if default_from_config is None:
         return None
 
@@ -138,14 +139,18 @@ def normalize_nested_metric_group(
     return result
 
 
-def calculate_roas(purchase_revenue: Decimal | None, spend: Decimal | None) -> float | None:
+def calculate_roas(
+    purchase_revenue: Decimal | None, spend: Decimal | None
+) -> float | None:
     if purchase_revenue is None or spend is None or spend <= 0:
         return None
 
     return float(purchase_revenue / spend)
 
 
-def normalize_record(record: dict[str, Any], settings: dict[str, Any]) -> dict[str, Any]:
+def normalize_record(
+    record: dict[str, Any], settings: dict[str, Any]
+) -> dict[str, Any]:
     """
     Normalize one record into flat reporting row.
 
@@ -202,7 +207,4 @@ def normalize_records(
     records: list[dict[str, Any]],
     settings: dict[str, Any],
 ) -> list[dict[str, Any]]:
-    return [
-        normalize_record(record, settings)
-        for record in records
-    ]
+    return [normalize_record(record, settings) for record in records]

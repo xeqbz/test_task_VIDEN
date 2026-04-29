@@ -23,10 +23,11 @@ def write_jsonl(rows: list[dict[str, Any]], output_path: str | Path) -> None:
 
     logger.info(f"Wrote {len(rows)} records to {path}")
 
+
 def load_to_bigquery_stub(rows: list[dict[str, Any]], settings: dict[str, Any]) -> None:
     """
     Load normalized records into BigQuery table.
-    
+
     Note: This is an example of how the loading function could look like.
 
     Requires google-cloud-bigquery library and proper authentication setup.
